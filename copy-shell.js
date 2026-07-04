@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'node:fs';
+import path from 'node:path';
 
 const shellFile = path.resolve('.output/public/_shell.html');
 const indexFile = path.resolve('.output/public/index.html');
