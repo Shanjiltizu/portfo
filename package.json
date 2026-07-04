@@ -6,7 +6,7 @@
   "homepage": "https://shanjiltizu.github.io/shanjil-portfolio",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "vite build && node copy-shell.js",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",

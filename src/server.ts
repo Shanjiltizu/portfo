@@ -37,9 +37,13 @@ async function normalizeCatastrophicSsrResponse(response: Response): Promise<Res
   });
 }
 
+import fs from "node:fs";
+
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      fs.appendFileSync("prerender_requests.log", `${request.url}\n`);
+      console.log("INCOMING REQUEST URL:", request.url);
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
       return await normalizeCatastrophicSsrResponse(response);

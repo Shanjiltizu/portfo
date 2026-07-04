@@ -214,9 +214,7 @@ function About() {
       <SectionHeader id="about" num="01" title="ABOUT" />
       <div className="grid gap-8 lg:grid-cols-3">
         <div className="glass-card rounded-2xl p-8 lg:col-span-2">
-          <p className="text-base leading-relaxed text-foreground lg:text-lg">
-            {ABOUT.bio}
-          </p>
+          <p className="text-base leading-relaxed text-foreground lg:text-lg">{ABOUT.bio}</p>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground lg:text-lg">
             {ABOUT.bioSecondary}
           </p>
@@ -292,7 +290,9 @@ function Projects() {
             <div className="relative">
               <div className="flex items-center justify-between text-[10px] tracking-[0.3em] text-muted-foreground">
                 <span className="glass-pill rounded-md px-2 py-1">PROJECT / {p.id}</span>
-                <span className="text-accent transition-transform group-hover:translate-x-1">→</span>
+                <span className="text-accent transition-transform group-hover:translate-x-1">
+                  →
+                </span>
               </div>
               <h3 className="mt-8 text-3xl font-semibold tracking-tight text-foreground">
                 {p.name}
@@ -302,7 +302,10 @@ function Projects() {
             </div>
             <div className="relative mt-8 flex flex-wrap gap-2">
               {p.stack.map((s) => (
-                <span key={s} className="glass-pill rounded-md px-3 py-1.5 text-[10px] tracking-wider">
+                <span
+                  key={s}
+                  className="glass-pill rounded-md px-3 py-1.5 text-[10px] tracking-wider"
+                >
                   {s}
                 </span>
               ))}
@@ -408,7 +411,9 @@ function Contact() {
                   <span className="text-[10px] tracking-[0.25em] text-accent">{l.k}</span>
                   <span className="flex items-center gap-3 text-sm text-foreground">
                     {l.v}
-                    <span className="text-accent transition-transform group-hover:translate-x-1">→</span>
+                    <span className="text-accent transition-transform group-hover:translate-x-1">
+                      →
+                    </span>
                   </span>
                 </a>
               </li>

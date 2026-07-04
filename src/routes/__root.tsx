@@ -78,9 +78,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Shanjil Tizu — Developer Portfolio" },
-      { name: "description", content: "Portfolio of Shanjil Tizu — Computer Science Engineering student, frontend developer, and AI intern based in The Nilgiris, India." },
+      {
+        name: "description",
+        content:
+          "Portfolio of Shanjil Tizu — Computer Science Engineering student, frontend developer, and AI intern based in The Nilgiris, India.",
+      },
       { property: "og:title", content: "Shanjil Tizu — Developer Portfolio" },
-      { property: "og:description", content: "Frontend developer, AI intern, and CS engineering student. Java, React, Python." },
+      {
+        property: "og:description",
+        content: "Frontend developer, AI intern, and CS engineering student. Java, React, Python.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -89,7 +96,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,

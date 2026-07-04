@@ -72,6 +72,7 @@ npm run preview
 ## Customization
 
 All content is in `src/content.ts`. Edit this file to update:
+
 - Personal info (name, location, tagline)
 - Work experience
 - Projects
