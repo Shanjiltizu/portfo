@@ -19,7 +19,7 @@ export default defineConfig({
     },
   },
   vite: {
-    base: "/shanjil-portfolio/",
+    base: "/portfo/",
     plugins: [
       {
         name: "copy-ssr-bundle",
