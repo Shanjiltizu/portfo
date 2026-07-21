@@ -1,11 +1,12 @@
 # Shanjil Tizu - Portfolio
 
-A stunning personal portfolio website featuring a modern **liquid glass design** with glassmorphism effects, fluid animations, and beautiful visual depth.
+A stunning personal portfolio website featuring a modern **liquid glass design** with glassmorphism effects, fluid animations, beautiful visual depth, and a seamless dark/light mode toggle.
 
-## Design Features
+## Design & Features
 
+- **Dark / Light Mode**: Interactive theme toggle switch with fluid transitions and preference persistence via `localStorage`.
 - **Liquid Glass Aesthetic**: Beautiful glassmorphism with blur effects, transparency, and layered depth
-- **Fluid Animations**: Animated floating orbs, gradient backgrounds, smooth transitions
+- **Fluid Animations**: Animated floating orbs, gradient backgrounds, and smooth hover translations
 - **Modern UI**: Glass cards, glowing accents, hover effects, and subtle micro-interactions
 - **Responsive**: Fully responsive design for all screen sizes
 - **Fast & Modern**: Built with TanStack Start, React 19, and Vite
@@ -20,14 +21,14 @@ A stunning personal portfolio website featuring a modern **liquid glass design**
 
 ## Live Demo
 
-Visit: https://shanjiltizu.github.io/shanjil-portfolio/
+Visit: https://shanjiltizu.github.io/portfo/
 
 ## Deployment Instructions
 
 ### Step 1: Create GitHub Repository
 
 1. Go to https://github.com/new
-2. Create a new repository named `shanjil-portfolio`
+2. Create a new repository named `portfo`
 3. Make it public
 4. **Do not** initialize with README, .gitignore, or license (we already have these)
 
@@ -37,7 +38,7 @@ Run these commands in the project directory:
 
 ```bash
 git branch -M main
-git remote add origin https://github.com/Shanjiltizu/shanjil-portfolio.git
+git remote add origin https://github.com/Shanjiltizu/portfo.git
 git push -u origin main
 ```
 
@@ -51,22 +52,24 @@ git push -u origin main
 ### Step 4: Access Your Site
 
 Your portfolio will be live at:
-**https://shanjiltizu.github.io/shanjil-portfolio/**
+**https://shanjiltizu.github.io/portfo/**
 
 ## Local Development
 
+You can use either Bun or NPM:
+
 ```bash
 # Install dependencies
-npm install
+bun install   # or npm install
 
 # Start development server
-npm run dev
+bun run dev   # or npm run dev
 
 # Build for production
-npm run build
+bun run build # or npm run build
 
 # Preview production build
-npm run preview
+bun run preview # or npm run preview
 ```
 
 ## Customization
