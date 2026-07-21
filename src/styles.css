@@ -32,6 +32,91 @@
   --glass: oklch(0.18 0.025 260 / 0.35);
   --glass-border: oklch(0.35 0.06 260 / 0.3);
   --glow: oklch(0.7 0.22 200 / 0.35);
+
+  /* Gradients and shadows */
+  --bg-gradient-1: oklch(0.25 0.15 200 / 0.18);
+  --bg-gradient-2: oklch(0.22 0.12 280 / 0.15);
+  --bg-gradient-3: oklch(0.3 0.12 220 / 0.12);
+  --bg-gradient-4: oklch(0.2 0.08 320 / 0.1);
+  --orb-opacity: 0.4;
+  --shadow-color: oklch(0 0 0 / 0.3);
+  --shadow-color-card: oklch(0 0 0 / 0.25);
+  --header-bg: oklch(0.1 0.02 260 / 0.6);
+  --header-border: oklch(0.3 0.05 260 / 0.35);
+  --card-bg: oklch(0.14 0.025 260 / 0.3);
+  --card-border: oklch(0.28 0.06 260 / 0.25);
+  --card-hover-bg: oklch(0.18 0.03 260 / 0.45);
+  --card-hover-border: oklch(0.5 0.12 200 / 0.4);
+  --row-bg: oklch(0.12 0.02 260 / 0.2);
+  --row-border: oklch(0.25 0.04 260 / 0.2);
+  --row-hover-bg: oklch(0.16 0.03 260 / 0.4);
+  --row-hover-border: oklch(0.4 0.1 200 / 0.4);
+  --pill-bg: oklch(0.18 0.03 260 / 0.35);
+  --pill-border: oklch(0.3 0.05 260 / 0.25);
+  --pill-hover-bg: oklch(0.22 0.04 260 / 0.5);
+  --pill-hover-border: oklch(0.55 0.15 200 / 0.5);
+  --btn-bg-start: oklch(0.25 0.05 260 / 0.5);
+  --btn-bg-end: oklch(0.2 0.04 260 / 0.4);
+  --btn-border: oklch(0.4 0.08 260 / 0.35);
+  --btn-hover-start: oklch(0.3 0.08 260 / 0.6);
+  --btn-hover-end: oklch(0.25 0.06 260 / 0.5);
+  --btn-hover-border: oklch(0.6 0.18 200 / 0.5);
+  --btn-primary-start: oklch(0.65 0.18 200);
+  --btn-primary-end: oklch(0.55 0.15 220);
+  --btn-primary-border: oklch(0.7 0.18 200 / 0.6);
+  --btn-primary-hover-start: oklch(0.72 0.18 200);
+  --btn-primary-hover-end: oklch(0.62 0.15 220);
+}
+
+:root.light {
+  /* Clean slate and teal light mode */
+  --background: oklch(0.97 0.01 240);
+  --foreground: oklch(0.15 0.02 260);
+  --muted: oklch(0.92 0.015 240);
+  --muted-foreground: oklch(0.45 0.02 260);
+  --accent: oklch(0.55 0.16 200);
+  --border: oklch(0.85 0.02 260);
+  --card: oklch(0.98 0.005 260);
+  --primary: oklch(0.15 0.02 260);
+
+  /* Glass effects overrides for Light Mode */
+  --glass: oklch(0.98 0.005 260 / 0.5);
+  --glass-border: oklch(0.75 0.04 260 / 0.25);
+  --glow: oklch(0.55 0.16 200 / 0.18);
+
+  /* Gradients and shadows overrides */
+  --bg-gradient-1: oklch(0.9 0.05 200 / 0.35);
+  --bg-gradient-2: oklch(0.92 0.04 280 / 0.3);
+  --bg-gradient-3: oklch(0.88 0.04 220 / 0.25);
+  --bg-gradient-4: oklch(0.94 0.03 320 / 0.2);
+  --orb-opacity: 0.22;
+  --shadow-color: oklch(0.1 0.02 260 / 0.08);
+  --shadow-color-card: oklch(0.1 0.02 260 / 0.06);
+  --header-bg: oklch(0.96 0.01 240 / 0.7);
+  --header-border: oklch(0.85 0.02 260 / 0.5);
+  --card-bg: oklch(0.98 0.005 260 / 0.4);
+  --card-border: oklch(0.84 0.02 260 / 0.3);
+  --card-hover-bg: oklch(0.98 0.005 260 / 0.75);
+  --card-hover-border: oklch(0.55 0.16 200 / 0.5);
+  --row-bg: oklch(0.98 0.005 260 / 0.25);
+  --row-border: oklch(0.86 0.02 260 / 0.35);
+  --row-hover-bg: oklch(0.98 0.005 260 / 0.55);
+  --row-hover-border: oklch(0.55 0.16 200 / 0.45);
+  --pill-bg: oklch(0.98 0.005 260 / 0.45);
+  --pill-border: oklch(0.84 0.02 260 / 0.4);
+  --pill-hover-bg: oklch(0.98 0.005 260 / 0.75);
+  --pill-hover-border: oklch(0.55 0.16 200 / 0.6);
+  --btn-bg-start: linear-gradient(135deg, oklch(0.98 0.005 260 / 0.65), oklch(0.95 0.01 260 / 0.55));
+  --btn-bg-end: oklch(0.95 0.01 260 / 0.55);
+  --btn-border: oklch(0.8 0.02 260 / 0.5);
+  --btn-hover-start: oklch(0.98 0.005 260 / 0.85);
+  --btn-hover-end: oklch(0.96 0.01 260 / 0.75);
+  --btn-hover-border: oklch(0.55 0.16 200 / 0.6);
+  --btn-primary-start: oklch(0.55 0.16 200);
+  --btn-primary-end: oklch(0.45 0.13 220);
+  --btn-primary-border: oklch(0.55 0.16 200 / 0.7);
+  --btn-primary-hover-start: oklch(0.6 0.18 200);
+  --btn-primary-hover-end: oklch(0.5 0.15 220);
 }
 
 html,
@@ -54,10 +139,10 @@ body {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(ellipse 100% 70% at 15% 30%, oklch(0.25 0.15 200 / 0.18), transparent 50%),
-    radial-gradient(ellipse 80% 80% at 85% 15%, oklch(0.22 0.12 280 / 0.15), transparent 50%),
-    radial-gradient(ellipse 90% 60% at 50% 85%, oklch(0.3 0.12 220 / 0.12), transparent 50%),
-    radial-gradient(ellipse 60% 40% at 75% 60%, oklch(0.2 0.08 320 / 0.1), transparent 50%),
+    radial-gradient(ellipse 100% 70% at 15% 30%, var(--bg-gradient-1), transparent 50%),
+    radial-gradient(ellipse 80% 80% at 85% 15%, var(--bg-gradient-2), transparent 50%),
+    radial-gradient(ellipse 90% 60% at 50% 85%, var(--bg-gradient-3), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 75% 60%, var(--bg-gradient-4), transparent 50%),
     var(--background);
   animation: liquidFlow 30s ease-in-out infinite alternate;
 }
@@ -105,7 +190,7 @@ body {
   position: fixed;
   border-radius: 50%;
   filter: blur(80px);
-  opacity: 0.4;
+  opacity: var(--orb-opacity);
   pointer-events: none;
   z-index: -1;
 }
@@ -173,6 +258,21 @@ body {
   }
 }
 
+/* Theme transitions */
+body,
+.liquid-bg,
+.glass,
+.glass-header,
+.glass-card,
+.glass-row,
+.glass-pill,
+.glass-btn,
+.glass-btn-primary,
+.glass-divider,
+h1, h2, h3, p, span, a, button, input {
+  transition: background 0.5s ease, background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease, backdrop-filter 0.5s ease;
+}
+
 /* Glass Panels */
 .glass {
   background: var(--glass);
@@ -180,101 +280,103 @@ body {
   -webkit-backdrop-filter: blur(24px) saturate(180%);
   border: 1px solid var(--glass-border);
   box-shadow:
-    0 8px 32px oklch(0 0 0 / 0.3),
+    0 8px 32px var(--shadow-color),
     inset 0 1px 0 oklch(1 0 0 / 0.1),
     inset 0 -1px 0 oklch(0 0 0 / 0.15);
 }
 
 .glass-header {
-  background: oklch(0.1 0.02 260 / 0.6);
+  background: var(--header-bg);
   backdrop-filter: blur(20px) saturate(160%);
   -webkit-backdrop-filter: blur(20px) saturate(160%);
-  border-bottom: 1px solid oklch(0.3 0.05 260 / 0.35);
-  box-shadow: 0 4px 20px oklch(0 0 0 / 0.2);
+  border-bottom: 1px solid var(--header-border);
+  box-shadow: 0 4px 20px var(--shadow-color);
 }
 
 .glass-card {
-  background: oklch(0.14 0.025 260 / 0.3);
+  background: var(--card-bg);
   backdrop-filter: blur(20px) saturate(160%);
   -webkit-backdrop-filter: blur(20px) saturate(160%);
-  border: 1px solid oklch(0.28 0.06 260 / 0.25);
+  border: 1px solid var(--card-border);
   box-shadow:
-    0 4px 24px oklch(0 0 0 / 0.25),
+    0 4px 24px var(--shadow-color-card),
     inset 0 1px 0 oklch(1 0 0 / 0.06);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-card:hover {
-  background: oklch(0.18 0.03 260 / 0.45);
-  border-color: oklch(0.5 0.12 200 / 0.4);
+  background: var(--card-hover-bg);
+  border-color: var(--card-hover-border);
   box-shadow:
-    0 12px 48px oklch(0 0 0 / 0.35),
-    0 0 40px oklch(0.65 0.22 200 / 0.12),
+    0 12px 48px var(--shadow-color),
+    0 0 40px var(--glow),
     inset 0 1px 0 oklch(1 0 0 / 0.1);
   transform: translateY(-4px);
 }
 
 .glass-row {
-  background: oklch(0.12 0.02 260 / 0.2);
+  background: var(--row-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-top: 1px solid oklch(0.25 0.04 260 / 0.2);
+  border-top: 1px solid var(--row-border);
   transition: all 0.3s ease;
 }
 
 .glass-row:hover {
-  background: oklch(0.16 0.03 260 / 0.4);
-  border-top-color: oklch(0.4 0.1 200 / 0.4);
+  background: var(--row-hover-bg);
+  border-top-color: var(--row-hover-border);
 }
 
 .glass-pill {
-  background: oklch(0.18 0.03 260 / 0.35);
+  background: var(--pill-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid oklch(0.3 0.05 260 / 0.25);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--pill-border);
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-pill:hover {
-  background: oklch(0.22 0.04 260 / 0.5);
-  border-color: oklch(0.55 0.15 200 / 0.5);
+  background: var(--pill-hover-bg);
+  border-color: var(--pill-hover-border);
   box-shadow: 0 0 20px var(--glow);
   transform: scale(1.02);
 }
 
 .glass-btn {
-  background: linear-gradient(135deg, oklch(0.25 0.05 260 / 0.5), oklch(0.2 0.04 260 / 0.4));
+  background: linear-gradient(135deg, var(--btn-bg-start), var(--btn-bg-end));
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid oklch(0.4 0.08 260 / 0.35);
+  border: 1px solid var(--btn-border);
   box-shadow:
-    0 4px 16px oklch(0 0 0 / 0.2),
+    0 4px 16px var(--shadow-color-card),
     inset 0 1px 0 oklch(1 0 0 / 0.08);
   transition: all 0.3s ease;
+  color: var(--foreground);
 }
 
 .glass-btn:hover {
-  background: linear-gradient(135deg, oklch(0.3 0.08 260 / 0.6), oklch(0.25 0.06 260 / 0.5));
-  border-color: oklch(0.6 0.18 200 / 0.5);
+  background: linear-gradient(135deg, var(--btn-hover-start), var(--btn-hover-end));
+  border-color: var(--btn-hover-border);
   box-shadow:
-    0 8px 24px oklch(0 0 0 / 0.3),
+    0 8px 24px var(--shadow-color),
     0 0 30px var(--glow);
   transform: translateY(-2px);
 }
 
 .glass-btn-primary {
-  background: linear-gradient(135deg, oklch(0.65 0.18 200), oklch(0.55 0.15 220));
-  border: 1px solid oklch(0.7 0.18 200 / 0.6);
+  background: linear-gradient(135deg, var(--btn-primary-start), var(--btn-primary-end));
+  border: 1px solid var(--btn-primary-border);
   box-shadow:
-    0 4px 20px oklch(0.6 0.2 200 / 0.3),
+    0 4px 20px var(--glow),
     inset 0 1px 0 oklch(1 0 0 / 0.2);
   color: oklch(0.1 0.02 260);
+  transition: all 0.3s ease;
 }
 
 .glass-btn-primary:hover {
-  background: linear-gradient(135deg, oklch(0.72 0.18 200), oklch(0.62 0.15 220));
+  background: linear-gradient(135deg, var(--btn-primary-hover-start), var(--btn-primary-hover-end));
   box-shadow:
-    0 8px 32px oklch(0.65 0.22 200 / 0.4),
+    0 8px 32px var(--glow),
     0 0 50px var(--glow);
   transform: translateY(-2px);
 }

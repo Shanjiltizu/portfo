@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import { Sun, Moon } from "lucide-react";
 import {
   HERO,
   ABOUT,
@@ -28,6 +29,27 @@ function Portfolio() {
   const [loading, setLoading] = useState(true);
   const [pct, setPct] = useState(0);
   const [time, setTime] = useState("");
+  const [theme, setTheme] = useState<"dark" | "light">(() => {
+    if (typeof window !== "undefined") {
+      return (localStorage.getItem("theme") as "dark" | "light") || "dark";
+    }
+    return "dark";
+  });
+
+  useEffect(() => {
+    const root = window.document.documentElement;
+    if (theme === "light") {
+      root.classList.add("light");
+      localStorage.setItem("theme", "light");
+    } else {
+      root.classList.remove("light");
+      localStorage.setItem("theme", "dark");
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  };
 
   useEffect(() => {
     const start = Date.now();
@@ -62,7 +84,7 @@ function Portfolio() {
       <div className="orb orb-1" />
       <div className="orb orb-2" />
       <div className="orb orb-3" />
-      <TopBar time={time} />
+      <TopBar time={time} theme={theme} toggleTheme={toggleTheme} />
       <main className="relative mx-auto max-w-6xl px-6 pb-32 pt-32 sm:px-10">
         <Hero />
         <About />
@@ -104,7 +126,7 @@ function Loader({ pct }: { pct: number }) {
   );
 }
 
-function TopBar({ time }: { time: string }) {
+function TopBar({ time, theme, toggleTheme }: { time: string; theme: "dark" | "light"; toggleTheme: () => void }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -138,7 +160,20 @@ function TopBar({ time }: { time: string }) {
             </a>
           ))}
         </nav>
-        <div className="tabular-nums text-foreground/70">{time} IST</div>
+        <div className="flex items-center gap-6">
+          <button
+            onClick={toggleTheme}
+            className="glass-pill flex h-8 w-8 items-center justify-center rounded-lg transition-transform hover:rotate-12 cursor-pointer"
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? (
+              <Sun className="h-4 w-4 text-amber-400" />
+            ) : (
+              <Moon className="h-4 w-4 text-accent" />
+            )}
+          </button>
+          <div className="tabular-nums text-foreground/70">{time} IST</div>
+        </div>
       </div>
     </header>
   );
